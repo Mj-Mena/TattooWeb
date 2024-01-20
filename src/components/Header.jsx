@@ -1,6 +1,7 @@
 import React from "react";
 import Navig from "./Navi";
-import About from "./About";
+import Intro from "./Intro";
+import { motion } from "framer-motion";
 function Header() {
   return (
     <>
@@ -10,7 +11,12 @@ function Header() {
         </section>
         <section>
           <div className="bg">
-            <section className="leftintro">
+            <motion.section
+              initial={{ opacity: 0, marginTop: 20 }}
+              animate={{ opacity: 1, marginTop: 30 }}
+              transition={{ duration: 0.5 }}
+              className="leftintro"
+            >
               <div className="drop">
                 <h1>INK IMPRESSION</h1>
                 <p>
@@ -19,13 +25,13 @@ function Header() {
                   as we take a leap into the world of tattoos, we hope to leave
                   you with a great impression in your adventure!
                 </p>
-                <button className="btn">Get Started </button>
+                <button className="btn">GET STARTED </button>
               </div>
-            </section>
+            </motion.section>
           </div>
         </section>
       </div>
-      <About></About>
+      <Intro></Intro>
     </>
   );
 }

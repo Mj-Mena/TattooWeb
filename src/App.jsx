@@ -1,13 +1,15 @@
 import "./App.css";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Head from "./components/Header";
-import Wed from "./components/Wed";
 
 function App() {
   return (
     <>
-      <Head></Head>
-      <Wed></Wed>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Head />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

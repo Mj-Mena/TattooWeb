@@ -14,16 +14,16 @@ function Navi() {
             <div>
               <ul>
                 <li>
-                  <a>About Us</a>
+                  <a href="#abt">ABOUT US</a>
                 </li>
                 <li>
-                  <a>Artist</a>
+                  <a href="#artist">ARTIST</a>
                 </li>
                 <li>
-                  <a>Random Art</a>
+                  <a href="#ra">RANDOM ART</a>
                 </li>
                 <li>
-                  <a>Contact us </a>
+                  <a href="#cu">CONTACT US</a>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/mona-sans");
-@import url("https://fonts.cdnfonts.com/css/helvetica-255");
 @import url("https://fonts.cdnfonts.com/css/arial");
-@import url("https://fonts.cdnfonts.com/css/acumin-pro");
-
-@import url("https://fonts.cdnfonts.com/css/shameimaru-sans");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Oswald:wght@700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import "react-alice-carousel/lib/alice-carousel.css";
