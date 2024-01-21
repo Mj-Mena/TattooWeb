@@ -1,4 +1,4 @@
-root {
+.root {
   padding: 0;
   margin: 0;
 }
@@ -182,7 +182,71 @@ h5:hover {
   cursor: pointer;
 }
 /* Carousel */
-.rouselCont {
+.swiper-container {
+  margin: auto;
+  margin-top: 20%;
+  align-self: center;
+  width: 70%;
+  height: 40rem;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 2px 2px 10px rgb(196, 194, 194);
+  filter: brightness(1);
+  transition: all ease-in-out 0.5s;
+  z-index: 1;
+}
+
+.swiper{
   width: 100%;
-  height: 80vh;
+  height: 62vh;
+}
+
+.swiper-wrapper{
+  margin-top: 1%;
+}
+
+.swiper .swiper-slide{
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide img{
+  justify-content: center;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  /*margin-left: auto;
+  margin-right: auto; */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 25rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 2px 2px 10px rgb(196, 194, 194);
+  filter: brightness(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.5s;
+}
+
+.swiper .swiper-pagination{
+  padding-bottom: 1rem;
+}
+
+.swiper .swiper-pagination-bullet{
+  opacity: 1;
+  background-color: black;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 .5rem;
+}
+
+.swiper .swiper-pagination-bullet-active{
+  opacity: 1;
+  background-color: #cfb20f;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 .5rem;
 }
