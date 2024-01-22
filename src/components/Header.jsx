@@ -3,6 +3,9 @@ import Navig from "./Navi";
 import Intro from "./Intro";
 import { motion } from "framer-motion";
 function Header() {
+  const handlegs = () => {
+    window.location = "http://127.0.0.1:5173/#abt";
+  };
   return (
     <>
       <div className="cont">
@@ -25,7 +28,9 @@ function Header() {
                   as we take a leap into the world of tattoos, we hope to leave
                   you with a great impression in your adventure!
                 </p>
-                <button className="btn">GET STARTED </button>
+                <button onClick={handlegs} className="btn">
+                  GET STARTED{" "}
+                </button>
               </div>
             </motion.section>
           </div>

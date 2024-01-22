@@ -1,13 +1,21 @@
 import React from "react";
 import "./components.css";
+import { motion } from "framer-motion";
 function Navi() {
   return (
     <>
       <div className="contNavi">
-        <nav className="mNavi">
+        <motion.nav
+          initial={{ opacity: 0, marginTop: 0 }}
+          animate={{ opacity: 1, marginTop: 5 }}
+          transition={{ duration: 0.5 }}
+          className="mNavi"
+        >
           <section>
             <div>
-              <p className="title">Ink Impression</p>
+              <p href="/" className="title">
+                Ink Impression
+              </p>
             </div>
           </section>
           <section className=" Nright">
@@ -17,10 +25,10 @@ function Navi() {
                   <a href="#abt">ABOUT US</a>
                 </li>
                 <li>
-                  <a href="#artist">ARTIST</a>
+                  <a href="#min">TATTOO</a>
                 </li>
                 <li>
-                  <a href="#ra">RANDOM ART</a>
+                  <a href="#ra">ARTIST</a>
                 </li>
                 <li>
                   <a href="#cu">CONTACT US</a>
@@ -28,7 +36,7 @@ function Navi() {
               </ul>
             </div>
           </section>
-        </nav>
+        </motion.nav>
       </div>
     </>
   );

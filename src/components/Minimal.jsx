@@ -1,13 +1,62 @@
 import React from "react";
 import "./components.css";
-import Rousel from "./Rousel";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 function Minimal() {
+  const { ref: sec1, inView } = useInView();
+  const { ref: sec2, inView: wew } = useInView();
+  const { ref: sec3, inView: wew2 } = useInView();
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  const animation3 = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 100,
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+  useEffect(() => {
+    if (wew) {
+      animation2.start({
+        opacity: 100,
+      });
+    } else {
+      animation2.start({
+        opacity: 0,
+      });
+    }
+  }, [wew]);
+  useEffect(() => {
+    if (wew2) {
+      animation3.start({
+        opacity: 100,
+      });
+    } else {
+      animation3.start({
+        opacity: 0,
+      });
+    }
+  }, [wew2]);
   return (
     <>
       <div className="minCont">
-        <section className="min1"></section>
-        <section className="even1">
-          <h1 style={{ fontFamily: "'Oswald' , san-serif" }}>MINIMALISTIC</h1>{" "}
+        <motion.section
+          ref={sec1}
+          animate={animation}
+          className="min1"
+        ></motion.section>
+        <motion.section animate={animation} className="even1">
+          <h1 id="min" style={{ fontFamily: "'Oswald' , san-serif" }}>
+            MINIMALISTIC
+          </h1>{" "}
           <p
             style={{
               fontFamily: "'Raleway' , san-serif",
@@ -31,9 +80,9 @@ function Minimal() {
           >
             READ MORE
           </h5>
-        </section>
-        <section className="min2"></section>
-        <section className="even1">
+        </motion.section>
+        <motion.section animate={animation} className="min2"></motion.section>
+        <motion.section ref={sec2} animate={animation2} className="even1">
           <h1 style={{ fontFamily: "'Oswald' , san-serif" }}>ABSTRACT</h1>{" "}
           <p
             style={{
@@ -58,9 +107,13 @@ function Minimal() {
           >
             READ MORE
           </h5>
-        </section>
-        <section className="min3"></section>
-        <section className="even1">
+        </motion.section>
+        <motion.section
+          ref={sec2}
+          animate={animation2}
+          className="min3"
+        ></motion.section>
+        <motion.section animate={animation2} className="even1">
           <h1 style={{ fontFamily: "'Oswald' , san-serif" }}>TRIBAL</h1>{" "}
           <p
             style={{
@@ -85,9 +138,8 @@ function Minimal() {
           >
             READ MORE
           </h5>
-        </section>
+        </motion.section>
       </div>
-      <Rousel />
     </>
   );
 }
