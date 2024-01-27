@@ -186,67 +186,128 @@ h5:hover {
   margin: auto;
   margin-top: 20%;
   align-self: center;
-  width: 70%;
+  width: 100%;
   height: 40rem;
-  background-color: rgb(254, 254, 254);
-  box-shadow: 2px 2px 10px rgb(196, 194, 194);
   filter: brightness(1);
   transition: all ease-in-out 0.5s;
   z-index: 1;
 }
 
-.swiper{
+.swiper {
   width: 100%;
   height: 62vh;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   margin-top: 1%;
 }
 
-.swiper .swiper-slide{
+.swiper .swiper-slide {
   margin: 0;
   position: relative;
   overflow: hidden;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   justify-content: center;
+  z-index: 999;
   overflow: hidden;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
   /*margin-left: auto;
   margin-right: auto; */
   margin-left: 5rem;
   margin-right: 5rem;
-  width: 25rem;
+  width: 35rem;
   height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
-  box-shadow: 2px 2px 10px rgb(196, 194, 194);
+
   filter: brightness(1);
   border-radius: 25px;
   transition: all ease-in-out 0.5s;
 }
-
-.swiper .swiper-pagination{
-  padding-bottom: 1rem;
+.overlay {
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  transition: all ease-in-out 1s;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(10%);
+  width: 85%;
+  height: 80%;
+  z-index: 1111;
 }
 
-.swiper .swiper-pagination-bullet{
+.swiper-slide:hover > .overlay {
+  transition: all ease-in-out 1s;
+  display: block;
+  transform: translate(30%);
+}
+.swiper-slide:hover > img {
+  display: block;
+}
+.swiper .swiper-pagination {
+  padding-top: 10rem;
+}
+
+.swiper .swiper-pagination-bullet {
   opacity: 1;
   background-color: black;
   height: 1rem;
   width: 1rem;
-  margin: 0 .5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 10%;
 }
 
-.swiper .swiper-pagination-bullet-active{
+.swiper .swiper-pagination-bullet-active {
   opacity: 1;
   background-color: #cfb20f;
-  height: 1rem;
-  width: 1rem;
-  margin: 0 .5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 10%;
+}
+
+/* quote */
+.swiper-button-prev {
+  color: #cfb20f;
+}
+.quote {
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.quote > p {
+  margin-top: -4rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 20%;
+}
+.author {
+  font-weight: 400;
+  margin-top: 3rem;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+}
+.quoteCont {
+  margin: auto;
+  margin-top: 15%;
+  align-self: center;
+  width: 100%;
+  height: 60vh;
+  filter: brightness(1);
+  transition: all ease-in-out 0.5s;
+  z-index: 1;
+}
+.cent {
+  font-family: "Oswald", sans-serif;
 }
