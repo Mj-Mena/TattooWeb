@@ -59,33 +59,24 @@ function Minimal() {
           <h1 className="heven" style={{ fontFamily: "'Oswald' , san-serif" }}>
             MINIMALISTIC
           </h1>{" "}
-          <p className="peven"
-          >
+          <p className="peven">
             Minimalistic tattoos feature simple, clean designs with a focus on
             essential elements, using limited detail, often in black ink.
             Popular for their timeless
           </p>
-          <h5
-            className="rm"
-
-          >
-            READ MORE
-          </h5>
+          <h5 className="rm">READ MORE</h5>
         </motion.section>
         <motion.section animate={animation} className="min2"></motion.section>
         <motion.section ref={sec2} animate={animation2} className="even1">
-          <h1 className="heven" style={{ fontFamily: "'Oswald' , san-serif" }}>ABSTRACT</h1>{" "}
-          <p className="peven"
-          >
+          <h1 className="heven" style={{ fontFamily: "'Oswald' , san-serif" }}>
+            ABSTRACT
+          </h1>{" "}
+          <p className="peven">
             Abstract tattoos showcase non-representational designs, emphasizing
             creativity with shapes and lines. They offer a unique and
             imaginative form of personal expression.
           </p>
-          <h5
-            className="rm"
-          >
-            READ MORE
-          </h5>
+          <h5 className="rm">READ MORE</h5>
         </motion.section>
         <motion.section
           ref={sec2}
@@ -93,20 +84,18 @@ function Minimal() {
           className="min3"
         ></motion.section>
         <motion.section animate={animation2} className="even1">
-          <h1 className="heven" style={{ fontFamily: "'Oswald' , san-serif" }}>TRIBAL</h1>{" "}
-          <p className="peven"
-          >
+          <h1 className="heven" style={{ fontFamily: "'Oswald' , san-serif" }}>
+            TRIBAL
+          </h1>{" "}
+          <p className="peven">
             Tribal tattoos, rooted in indigenous cultures, are bold black
             designs symbolizing heritage or status. Merging tradition with
             contemporary styles, they serve as powerful expressions of identity.
           </p>
-          <h5
-            className="rm"
-          >
-            READ MORE
-          </h5>
+          <h5 className="rm">READ MORE</h5>
         </motion.section>
       </div>
+      <Lifequotes></Lifequotes>
       <Rousel></Rousel>
     </>
   );

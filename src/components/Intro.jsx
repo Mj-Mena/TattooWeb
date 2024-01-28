@@ -43,7 +43,7 @@ function Intro() {
           READ MORE
         </motion.button>
       </div>
-      <Lifequotes></Lifequotes>
+      <Minimal></Minimal>
     </>
   );
 }
