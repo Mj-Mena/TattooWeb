@@ -231,18 +231,21 @@ h5:hover {
   margin-bottom: 1rem;
   padding: 2%;
   box-shadow: 2px 2px 5px rgb(128, 127, 127);
-  /*margin-left: auto;
-  margin-right: auto; */
   margin-left: 5rem;
   margin-right: 5rem;
   width: 35rem;
   height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
-
   filter: brightness(1);
+  transform: scale(1);
   border-radius: 25px;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
+}
+.swiper-slide:hover img {
+  box-shadow: 2px 2px 5px rgb(62, 62, 62);
+  filter: brightness(0.5);
+  transform: scale(1.1);
 }
 .overlay {
   position: absolute;

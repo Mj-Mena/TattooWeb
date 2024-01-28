@@ -42,7 +42,6 @@ const UserProfile = () => {
               Back
             </button>
           </div>
-
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
             nemo debitis nisi deleniti sit corrupti. Nam iure deserunt beatae?
