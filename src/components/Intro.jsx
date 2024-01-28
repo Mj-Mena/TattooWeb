@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import Lifequotes from "./Lifequotes";
 function Intro() {
   const { ref: sec1, inView } = useInView();
   const animation = useAnimation();
@@ -42,7 +43,7 @@ function Intro() {
           READ MORE
         </motion.button>
       </div>
-      <Minimal></Minimal>
+      <Lifequotes></Lifequotes>
     </>
   );
 }

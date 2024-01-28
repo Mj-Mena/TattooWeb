@@ -3,6 +3,7 @@ import "swiper/css/bundle";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Rousel from "./Rousel";
+import Minimal from "./Minimal";
 function Lifequotes() {
   return (
     <>
@@ -59,7 +60,7 @@ function Lifequotes() {
           </div>
         </Swiper>
       </div>
-      <Rousel></Rousel>
+      <Minimal></Minimal>
     </>
   );
 }

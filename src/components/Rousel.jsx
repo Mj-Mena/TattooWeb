@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from "react";
 import "swiper/css/bundle";
+import { Link } from 'react-router-dom';
 import {
   A11y,
   EffectCoverflow,
@@ -9,7 +10,13 @@ import {
   Pagination,
   Scrollbar,
 } from "swiper/modules";
-function Rousel() {
+
+const Rousel = () => {
+  const user1 = { id: 'Just Galang', name: 'Just Galang' };
+  const user2 = { id: 'Mikki Malonzo', name: 'Mikki Malonzo' };
+  const user3 = { id: 'user3', name: 'User 3' };
+  const user4 = { id: 'user4', name: 'User 4' };
+
   return (
     <>
       <div className="swiper-container">
@@ -34,7 +41,8 @@ function Rousel() {
           <div className="swiper" id="swiper-1">
             <div className="swiper-wrapper">
               <SwiperSlide>
-                <div className="overlay">h1</div>
+                <div className="overlay">
+                h2</div>
                 <img
                   src="src\assets\1.jpg"
                   id="img1"
@@ -42,9 +50,13 @@ function Rousel() {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
-                <div className="overlay"></div>
+                <div className="overlay">
+                <Link to={`/gallery/${user1.id}`}>View Gallery</Link>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
+                <div className="overlay">
+                h2</div>
                 <img
                   src="src\assets\2.jpg"
                   id="img2"
@@ -52,6 +64,9 @@ function Rousel() {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
+                <div className="overlay">
+                <Link to={`/gallery/${user2.id}`}>View Gallery</Link>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
                 <img

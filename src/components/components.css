@@ -1,3 +1,4 @@
+
 .root {
   padding: 0;
   margin: 0;
@@ -172,7 +173,21 @@ ul > li > a:hover {
 .min3 {
   background-image: url("../assets/3.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
+.peven{
+  font-family: "'Raleway' , san-serif";
+  font-size: .9rem;
+  line-height: 1.5rem;
+  color: #828486;
+}
+.rm{
+  font-family: "'Oswald' , san-serif";
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
 h5 {
   transition: all ease-in-out 0.3s;
   color: #c59d5f;
@@ -300,7 +315,6 @@ h5:hover {
 }
 .quoteCont {
   margin: auto;
-  margin-top: 15%;
   align-self: center;
   width: 100%;
   height: 60vh;
@@ -311,3 +325,300 @@ h5:hover {
 .cent {
   font-family: "Oswald", sans-serif;
 }
+
+/*Image Gallery or Gallery.jsx */
+.profile-image{
+  height: 5%;
+  width: 10%;
+  /*border-style is temporary so that you can see it's the profile image */
+  border-style: dotted;
+}
+
+.display{
+  height: 10%;
+  width: 20%;
+  display: flex;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  filter: brightness(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.5s;
+}
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  {
+
+   /* smartphones, Android phones, landscape iPhone */
+  }
+@media (min-width:600px)  { 
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .bg{
+    margin-top: -8%;
+    height: 60vh;
+  }
+  .mNavi {
+    padding-left: 1%;
+    display: flex;
+    gap: 5rem;
+  }
+  .title{
+    padding-top: 15%;
+    margin: 0%;
+    font-size: 1.0rem;
+  }
+  .Nright{
+    margin-left: 1%;
+  }
+  .Nright > div > ul > li > a {
+    font-size: 0.55rem;
+  }
+  .drop{
+    margin-left: 46.5%;
+    margin-top: 5%;
+  }
+  .drop > h1 {
+  margin-bottom:0%;
+  font-size: 1.4rem;
+  }
+  .drop > p {
+  margin-top: 2%;
+  padding: 0% 15%;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  }
+  .btn{
+  margin-top: 4%;
+  font-size: 0.6rem;
+  }
+  /*Hello World section later */
+  .intCont{
+    margin-top: 5%;
+    height: 65vh;
+  }
+  .minCont{
+  height: 70vh;
+  }
+  .even1{
+    padding: 5%;
+    height: 40vh;
+  }
+  .heven{
+    font-size: 1.2rem;
+    margin: .2rem;
+  }
+  .peven{
+    margin: 1%;
+    padding: 0% 15%;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .rm{
+    font-size: 0.8rem;
+  }
+  .swiper-container{
+    margin-top: 40%;
+  }
+}
+@media (min-width:800px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .bg{
+      margin-top: -8%;
+      height: 60vh;
+    }
+    .mNavi {
+      display: flex;
+      gap: 12rem;
+    }
+    .title{
+    font-size: 1.3rem;
+    }
+    .Nright > div > ul > li > a {
+    font-size: 0.7rem;
+    }
+    .drop{
+      margin-left: 46.5%;
+      margin-top: 10%;
+    }
+    .drop > h1 {
+    margin-bottom:0%;
+    font-size: 2.2rem;
+    }
+    .drop > p {
+    margin-top: 2%;
+    padding: 0% 15%;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    }
+    .btn{
+    margin-top: 4%;
+    font-size: 0.6rem;
+    }
+    /*Hello World section later */
+    .intCont{
+      height: 65vh;
+    }
+    .minCont{
+    height: 70vh;
+    }
+    .even1{
+      padding: 5%;
+      height: 40vh;
+    }
+    .heven{
+      font-size: 1.2rem;
+      margin: .2rem;
+    }
+    .peven{
+      margin: 1%;
+      padding: 0% 15%;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+    .rm{
+      font-size: 0.8rem;
+    }
+    .swiper-container{
+      margin-top: 40%;
+    }
+  }
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */ 
+    .bg{
+      margin-top: -8%;
+    }
+    .mNavi {
+      display: flex;
+      gap: 10.5rem;
+    }
+    .drop{
+      margin-left: 61.5%;
+    }
+    .intCont{
+      height: 65vh;
+    }
+  }
+@media (min-width:1280px) {
+   /* hi-res laptops and desktops */ 
+   .bg{
+    margin-top: -8%;
+    }
+    .mNavi {
+      display: flex;
+      gap: 30rem;
+    }
+    .title{
+    font-size: 1.9rem;
+    }
+    .Nright > div > ul > li > a {
+    font-size: 1.0rem;
+    }
+    .drop{
+      margin-left: 46%;
+      margin-top: 10%;
+    }
+    .drop > h1 {
+    margin-bottom:0%;
+    font-size: 3.5rem;
+    }
+    .drop > p {
+    margin-top: 2%;
+    padding: 0% 15%;
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+    }
+    .btn{
+    margin-top: 4%;
+    font-size: 1rem;
+    }
+    /*Hello World section later */
+    .intCont{
+      height: 60vh;
+    }
+    .minCont{
+    height: 100vh;
+    }
+    .even1{
+      padding: 5%;
+      height: 45vh;
+    }
+    .heven{
+      font-size: 2rem;
+      margin: .4rem;
+    }
+    .peven{
+      margin: 1%;
+      padding: 0% 15%;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+    .rm{
+      font-size: 1.1rem;
+    }
+    .swiper-container{
+      margin-top: 40%;
+    }
+  }
+
+  @media (min-width:1920px) {
+    /* hi-res laptops and desktops */ 
+     .bg{
+       margin-top: -6%;
+     }
+     .mNavi {
+       display: flex;
+       gap: 60rem;
+     }
+     .title{
+      font-size: 2.2rem;
+     }
+     .Nright > div > ul > li > a {
+      font-size: 1.2rem;
+     }
+     .drop{
+       margin-left: 46%;
+     }
+     .drop > h1 {
+      margin-bottom:0%;
+      font-size: 5rem;
+     }
+     .drop > p {
+      margin-top: 2%;
+      padding: 0% 15%;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+     }
+     .btn{
+      margin-top: 4%;
+     }
+     /*Hello World section later */
+     .intCont{
+       height: 70vh;
+     }
+     .minCont{
+      height: 100vh;
+    }
+    .even1{
+      padding: 5%;
+      height: 45vh;
+    }
+    .heven{
+      font-size: 3rem;
+      margin: .4rem;
+    }
+    .peven{
+      margin: 1%;
+      padding: 0% 15%;
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+    }
+    .rm{
+      font-size: 1.8rem;
+    }
+    .swiper-container{
+      margin-top: 40%;
+    }
+   }
+ 
+
