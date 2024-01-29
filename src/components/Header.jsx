@@ -2,6 +2,7 @@ import React from "react";
 import Navig from "./Navi";
 import Intro from "./Intro";
 import { motion } from "framer-motion";
+import Lifequotes from "./Lifequotes";
 function Header() {
   const handlegs = () => {
     window.location = "http://127.0.0.1:5173/#abt";
@@ -36,7 +37,7 @@ function Header() {
           </div>
         </section>
       </div>
-      <Intro></Intro>
+      <Lifequotes></Lifequotes>
     </>
   );
 }

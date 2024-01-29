@@ -60,6 +60,7 @@ function Lifequotes() {
           </div>
         </Swiper>
       </div>
+      <Minimal></Minimal>
     </>
   );
 }

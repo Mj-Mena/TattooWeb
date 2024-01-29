@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import Rousel from "./Rousel";
-import Lifequotes from "./Lifequotes";
+import Intro from "./Intro";
 function Minimal() {
   const { ref: sec1, inView } = useInView();
   const { ref: sec2, inView: wew } = useInView();
@@ -95,8 +95,7 @@ function Minimal() {
           <h5 className="rm">READ MORE</h5>
         </motion.section>
       </div>
-      <Lifequotes></Lifequotes>
-      <Rousel></Rousel>
+      <Intro></Intro>
     </>
   );
 }
