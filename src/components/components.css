@@ -196,6 +196,32 @@ h5:hover {
   cursor: pointer;
 }
 /* Carousel */
+#da {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.gotogal {
+  z-index: 100000;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 25%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #acaaaa;
+  padding: 3% 15%;
+  border: 1px solid #c2c0c0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.gotogal:hover {
+  border: 1px solid #f7f6f6;
+  background-color: white;
+  border: none;
+  color: #000;
+}
+
 .swiper-container {
   margin: auto;
   margin-top: 15%;
@@ -291,6 +317,7 @@ h5:hover {
 }
 
 /* quote */
+<<<<<<< Updated upstream
 .quoteCont .swiper {
   width: 100%;
   height: 42vh;
@@ -299,6 +326,9 @@ h5:hover {
 .swiper-button-prev {
   color: #cfb20f;
 }
+=======
+
+>>>>>>> Stashed changes
 .quote {
   font-family: "Oswald", sans-serif;
   align-items: center;
@@ -494,27 +524,52 @@ h5:hover {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .bg {
     margin-top: -8%;
+<<<<<<< Updated upstream
     height: 70vh;
+=======
+    height: 80vh;
+>>>>>>> Stashed changes
   }
+
   .mNavi {
     display: flex;
+<<<<<<< Updated upstream
     gap: 15rem;
+=======
+    justify-content: space-between;
+    margin-right: 3%;
+>>>>>>> Stashed changes
   }
+
   .title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+
   .Nright > div > ul > li > a {
+<<<<<<< Updated upstream
     font-size: 0.9rem;
+=======
+    font-size: 0.6rem;
+>>>>>>> Stashed changes
   }
+
   .drop {
+<<<<<<< Updated upstream
     margin-top: 15%;
     margin-left: 62%;
+=======
+    margin-left: 60%;
+    margin-top: 10%;
+>>>>>>> Stashed changes
   }
+
   .drop > h1 {
     margin-bottom: 0%;
     font-size: 1.5rem;
   }
+
   .drop > p {
+<<<<<<< Updated upstream
     margin-top: 5%;
     padding: 0% 10%;
     font-size: 0.8rem;
@@ -562,31 +617,67 @@ h5:hover {
   .intCont {
     height: 55vh;
   }
+=======
+    margin-top: 2%;
+    padding: 0% 10%;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+
+  .btn {
+    margin-top: 4%;
+    font-size: 0.6rem;
+  }
+  .cent {
+    font-size: 2.3rem;
+  }
+  .quoteCont {
+    margin-top: 20%;
+  }
+  .intCont {
+    height: 65vh;
+  }
+
+>>>>>>> Stashed changes
   .minCont {
     height: 70vh;
   }
+
   .even1 {
     padding: 5%;
     height: 30vh;
   }
+
   .heven {
     font-size: 1.0rem;
     margin: 0.4rem;
   }
+
   .peven {
     margin: 1%;
     padding: 0% 15%;
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
+
   .rm {
+<<<<<<< Updated upstream
     font-family: "Oswald", sans-serif;
     font-size: 1.0rem;
+=======
+    font-size: 0.8rem;
+    font-family: Oswald, sans-serif;
+  }
+
+  .swiper-container {
+    margin-top: 10%;
+>>>>>>> Stashed changes
   }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .bg {
+<<<<<<< Updated upstream
     margin-top: -6%;
     height: 70vh;
   }
@@ -613,9 +704,78 @@ h5:hover {
     padding: 0% 10%;
     font-size: 1.0rem;
     line-height: 1.6rem;
+=======
+    margin-top: -8%;
+    height: 80vh;
   }
+  .mNavi {
+    display: flex;
+    gap: 30rem;
+  }
+  .title {
+    margin-top: -2%;
+    font-size: 1rem;
+  }
+  .Nright > div > ul > li > a {
+    font-size: 0.7rem;
+  }
+  .drop {
+    margin-left: 60%;
+    margin-top: 10%;
+>>>>>>> Stashed changes
+  }
+  .drop > h1 {
+    margin-bottom: 0%;
+    font-size: 2.5rem;
+  }
+  .drop > p {
+    margin-top: 2%;
+    padding: 0% 5%;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .btn {
+    margin-top: 4%;
+    font-size: 0.8rem;
+  }
+  .cent {
+    font-size: 2.7rem;
+  }
+  /*Hello World section later */
   .intCont {
-    height: 65vh;
+    height: 60vh;
+  }
+  .minCont {
+    height: 100vh;
+  }
+
+  .even1 {
+    padding: 5%;
+    height: 45vh;
+  }
+  .heven {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+  }
+  .peven {
+    margin: 1%;
+    padding: 0% 15%;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .quoteCont {
+    margin-top: 5%;
+    height: 70vh;
+  }
+  .swiper-pagination {
+    margin-top: 5%;
+  }
+  .rm {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+  }
+  .swiper-container {
+    margin-top: 10%;
   }
   .drop .btn {
     margin-top: 10%;
@@ -679,19 +839,21 @@ h5:hover {
 
   .bg {
     margin-top: -8%;
+    height: 80vh;
   }
   .mNavi {
     display: flex;
     gap: 30rem;
   }
   .title {
-    font-size: 1.9rem;
+    margin-top: -2%;
+    font-size: 1.5rem;
   }
   .Nright > div > ul > li > a {
     font-size: 1rem;
   }
   .drop {
-    margin-left: 46%;
+    margin-left: 60%;
     margin-top: 10%;
   }
   .drop > h1 {
@@ -702,7 +864,7 @@ h5:hover {
     margin-top: 2%;
     padding: 0% 15%;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.2rem;
   }
   .btn {
     margin-top: 4%;
@@ -760,6 +922,12 @@ h5:hover {
     font-family: "Oswald", sans-serif;
     font-size: 1.1rem;
   }
+<<<<<<< Updated upstream
+=======
+  .swiper-container {
+    margin-top: 10%;
+  }
+>>>>>>> Stashed changes
 }
 
 @media (min-width: 1920px) {
