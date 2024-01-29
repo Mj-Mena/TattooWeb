@@ -19,7 +19,7 @@ const Rousel = () => {
 
   return (
     <>
-      <div className="swiper-container">
+      <div id="ra" className="swiper-container">
         <h1 id="da" style={{ textAlign: "center" }}>
           Discover Artist
         </h1>

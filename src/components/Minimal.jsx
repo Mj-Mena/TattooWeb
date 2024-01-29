@@ -51,6 +51,7 @@ function Minimal() {
     <>
       <div className="minCont">
         <motion.section
+          id="min"
           ref={sec1}
           animate={animation}
           className="min1"
