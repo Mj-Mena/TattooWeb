@@ -204,26 +204,6 @@ h5:hover {
   font-weight: 700;
   font-size: 2.5rem;
 }
-.gotogal {
-  z-index: 100000;
-  position: absolute;
-  margin-top: -15%;
-  margin-left: 25%;
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  color: #acaaaa;
-  padding: 3% 15%;
-  border: 1px solid #c2c0c0;
-  border-radius: 8px;
-  background-color: transparent;
-}
-.gotogal:hover {
-  border: 1px solid #f7f6f6;
-  background-color: white;
-  border: none;
-  color: #000;
-}
 
 .swiper-container {
   margin: auto;
@@ -250,6 +230,151 @@ h5:hover {
   position: relative;
   overflow: hidden;
 }
+/* Test */
+.slide-1{
+  background-image: url("../assets/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slide-1{
+  background-image: url("../assets/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slide-2{
+  background-image: url("../assets/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slide-3{
+  background-image: url("../assets/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slide-4{
+  background-image: url("../assets/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slide-5{
+  background-image: url("../assets/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgb(128, 127, 127);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 30rem;
+  height: 80%;
+  object-fit: cover;
+  background-color: rgb(254, 254, 254);
+  filter: brightness(1);
+  transform: scale(1);
+  border-radius: 25px;
+  transition: all ease-in-out 0.3s;
+}
+
 
 .swiper-slide img {
   justify-content: center;
