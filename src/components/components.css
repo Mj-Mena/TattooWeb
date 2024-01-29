@@ -549,6 +549,16 @@ h5:hover {
 }
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .display {
+    height: 15vh;
+  }
+  .profile-gallery img {
+    height: 10.75rem;
+    width: 10.75rem;
+  }
+  .deets {
+    margin-left: -10%;
+  }
   .intro > h1 {
     font-size: 1.4rem;
   }
@@ -642,7 +652,16 @@ h5:hover {
 }
 @media (min-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-
+  .display {
+    height: 25vh;
+  }
+  .profile-gallery img {
+    height: 15.75rem;
+    width: 15.75rem;
+  }
+  .deets {
+    margin-left: -10%;
+  }
   .bg {
     margin-top: -8%;
     height: 70vh;
@@ -761,6 +780,16 @@ h5:hover {
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+  .display {
+    height: 30vh;
+  }
+  .profile-gallery img {
+    height: 20.75rem;
+    width: 20.75rem;
+  }
+  .deets {
+    margin-left: -10%;
+  }
   .bg {
     margin-top: -6%;
     height: 70vh;
@@ -916,7 +945,16 @@ h5:hover {
 }
 @media (min-width: 1280px) {
   /* hi-res laptops and desktops */
-
+  .display {
+    height: 40vh;
+  }
+  .profile-gallery img {
+    height: 20.75rem;
+    width: 20.75rem;
+  }
+  .deets {
+    margin-left: -15%;
+  }
   .bg {
     margin-top: -8%;
     height: 80vh;
@@ -1022,6 +1060,16 @@ h5:hover {
 
 @media (min-width: 1920px) {
   /* hi-res laptops and desktops */
+  .profile-gallery img {
+    height: 24.75rem;
+    width: 24.75rem;
+  }
+  .deets {
+    margin-left: -30%;
+  }
+  .display {
+    height: 50vh;
+  }
   .bg {
     margin-top: -5%;
     height: 85vh;
