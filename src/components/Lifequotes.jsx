@@ -19,7 +19,7 @@ function Lifequotes() {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <div className="swiper" id="swiper-1">
+          <div className="swiper" id="swiper-2">
             <div className="swiper-wrapper">
               <SwiperSlide>
                 <div className="quote">

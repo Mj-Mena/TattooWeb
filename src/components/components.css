@@ -198,7 +198,7 @@ h5:hover {
 /* Carousel */
 .swiper-container {
   margin: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   align-self: center;
   width: 100%;
   height: 40rem;
@@ -207,17 +207,17 @@ h5:hover {
   z-index: 1;
 }
 
-.swiper {
+.swiper-container .swiper {
   width: 100%;
   height: 62vh;
 }
 
-.swiper-wrapper {
+.swiper-wrapper1 {
   margin-top: 1%;
 }
 
 .swiper .swiper-slide {
-  margin: 0;
+  margin-left:0;
   position: relative;
   overflow: hidden;
 }
@@ -233,7 +233,7 @@ h5:hover {
   box-shadow: 2px 2px 5px rgb(128, 127, 127);
   margin-left: 5rem;
   margin-right: 5rem;
-  width: 35rem;
+  width: 30rem;
   height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
@@ -291,6 +291,11 @@ h5:hover {
 }
 
 /* quote */
+.quoteCont .swiper {
+  width: 100%;
+  height: 42vh;
+}
+
 .swiper-button-prev {
   color: #cfb20f;
 }
@@ -307,7 +312,7 @@ h5:hover {
   font-family: "Oswald", sans-serif;
   justify-content: center;
   align-items: center;
-  padding: 10% 20%;
+  padding: 10% 10%;
 }
 .author {
   font-weight: 400;
@@ -483,97 +488,195 @@ h5:hover {
     font-family: "Oswald", sans-serif;
     font-size: 0.8rem;
   }
-  .swiper-container {
-    margin-top: 10%;
-  }
+
 }
 @media (min-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .bg {
     margin-top: -8%;
-    height: 60vh;
+    height: 70vh;
   }
   .mNavi {
     display: flex;
-    gap: 12rem;
+    gap: 15rem;
   }
   .title {
     font-size: 1.3rem;
   }
   .Nright > div > ul > li > a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .drop {
-    margin-left: 46.5%;
-    margin-top: 10%;
+    margin-top: 15%;
+    margin-left: 62%;
   }
   .drop > h1 {
     margin-bottom: 0%;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   .drop > p {
-    margin-top: 2%;
-    padding: 0% 15%;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
+    margin-top: 5%;
+    padding: 0% 10%;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
   }
-  .btn {
-    margin-top: 4%;
-    font-size: 0.6rem;
-  }
-  /*Hello World section later */
   .intCont {
     height: 65vh;
+  }
+  .drop .btn {
+    margin-top: 10%;
+    font-size: 0.6rem;
+  }
+  /*Swiper Slide*/
+  .swiper-container {
+    margin-top: 5%;
+  }
+  .swiper .swiper-slide {
+    margin-left: 4.1%;
+  }
+  .swiper-slide img {
+    width: 20rem;
+    height: 63%;
+  }  
+
+  .swiper-container .swiper .swiper-pagination{
+    margin-left: 0.5%;
+  }
+   /*Life Quotes*/
+  .quoteCont{
+    margin-top: 30%;
+    height: 50vh;
+  }
+  .quoteCont .swiper .swiper-slide {
+    margin-left: 0%;
+  } 
+  .quoteCont .swiper .swiper-pagination{
+    margin-left: -0.8%;
+  }
+  .quote > p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /*Hello World section later */
+  .intCont {
+    height: 55vh;
   }
   .minCont {
     height: 70vh;
   }
   .even1 {
     padding: 5%;
-    height: 40vh;
+    height: 30vh;
   }
   .heven {
-    font-size: 1.2rem;
-    margin: 0.2rem;
+    font-size: 1.0rem;
+    margin: 0.4rem;
   }
   .peven {
     margin: 1%;
     padding: 0% 15%;
     font-size: 0.8rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
   }
   .rm {
-    font-size: 0.8rem;
     font-family: "Oswald", sans-serif;
-  }
-  .swiper-container {
-    margin-top: 10%;
+    font-size: 1.0rem;
   }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  .swiper-container {
-    margin-top: 10%;
-  }
   .bg {
-    margin-top: -8%;
+    margin-top: -6%;
+    height: 70vh;
   }
   .mNavi {
     display: flex;
-    gap: 10.5rem;
+    gap: 27rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .Nright > div > ul > li > a {
+    font-size: 1rem;
   }
   .drop {
-    margin-left: 61.5%;
+    margin-top: 15%;
+    margin-left: 62%;
+  }
+  .drop > h1 {
+    margin-bottom: 0%;
+    font-size: 2.0rem;
+  }
+  .drop > p {
+    margin-top: 5%;
+    padding: 0% 10%;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
   }
   .intCont {
     height: 65vh;
   }
+  .drop .btn {
+    margin-top: 10%;
+    font-size: 0.7rem;
+  }
+  /*Swiper Slide*/
+  .swiper-container {
+    margin-top: 5%;
+  }
+  .swiper .swiper-slide {
+    margin-left: -0.2%;
+  }
+  .swiper-slide img {
+    width: 20rem;
+    height: 63%;
+  }  
+   /*Life Quotes*/
+  .quoteCont{
+    margin-top: 14%;
+    height: 50vh;
+  }
+  .quoteCont .swiper .swiper-slide {
+    margin-left: -0.1%;
+  } 
+  .quoteCont .swiper .swiper-pagination{
+    margin-left: -0.8%;
+  }
+  .quote > p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /*Hello World section later */
+  .intCont {
+    height: 60vh;
+  }
+  .minCont {
+    height: 75vh;
+  }
+  .even1 {
+    padding: 5%;
+    height: 35vh;
+  }
+  .heven {
+    font-size: 1rem;
+    margin: 0.4rem;
+  }
+  .peven {
+    margin: 1%;
+    padding: 0% 15%;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+  .rm {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 1280px) {
   /* hi-res laptops and desktops */
-  .swiper-container {
-    margin-top: 10%;
-  }
+
   .bg {
     margin-top: -8%;
   }
@@ -605,6 +708,33 @@ h5:hover {
     margin-top: 4%;
     font-size: 1rem;
   }
+  /*Swiper Slide*/
+  .swiper-container {
+    margin-top: 10%;
+  }
+  .swiper .swiper-slide {
+    margin-left: 0.75%;
+  }
+  .swiper-slide img {
+    width: 22rem;
+    height: 65%;
+  }  
+   /*Life Quotes*/
+  .quoteCont{
+    margin-top: 15%;
+    height: 50vh;
+  }
+  .quoteCont .swiper .swiper-slide {
+    margin-left: -0.1%;
+  } 
+  .quoteCont .swiper .swiper-pagination{
+    margin-left: -0.8%;
+  }
+  .quote > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
   /*Hello World section later */
   .intCont {
     height: 60vh;
@@ -630,32 +760,23 @@ h5:hover {
     font-family: "Oswald", sans-serif;
     font-size: 1.1rem;
   }
-  .swiper-container {
-    margin-top: 40%;
-  }
 }
 
 @media (min-width: 1920px) {
   /* hi-res laptops and desktops */
-  .quoteCont {
-    margin-top: 10%;
-  }
-  .swiper-container {
-    margin-top: 10%;
-  }
   .bg {
-    margin-top: -6%;
-    height: 95vh;
+    margin-top: -5%;
+    height: 85vh;
   }
   .mNavi {
     display: flex;
-    gap: 70rem;
+    gap: 65rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .Nright > div > ul > li > a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .drop {
     margin-left: 63%;
@@ -667,12 +788,33 @@ h5:hover {
   .drop > p {
     margin-top: 2%;
     padding: 0% 5%;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
-  .btn {
-    margin-top: 4%;
+  .drop .btn {
+    margin-top: 9%;
+    font-size: 1rem;
   }
+  /*Swiper Slide*/
+  .swiper-container{
+    margin-top: 0%;
+  }
+  .swiper-container .swiper .swiper-slide {
+    margin-left: 2.5%;
+  }  
+  .swiper-slide img {
+    width: 30rem;
+    height: 80%;
+  }   
+  /*Life Quotes*/
+  .quoteCont{
+    margin-top: 14%;
+    height: 65vh;
+  }
+  .quoteCont .swiper .swiper-slide {
+    margin-left: -0.3%;
+  }  
+
   /*Hello World section later */
   .intCont {
     height: 70vh;
@@ -686,21 +828,19 @@ h5:hover {
     height: 45vh;
   }
   .heven {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin-top: 20%;
     margin: 0.4rem;
   }
   .peven {
     margin: 1%;
     padding: 0% 15%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.3rem;
   }
   .rm {
     font-size: "Oswald", san-serif;
     font-size: 1.2rem;
   }
-  .swiper-container {
-    margin-top: 10%;
-  }
+
 }

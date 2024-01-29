@@ -22,18 +22,53 @@ const Rousel = () => {
       <div className="swiper-container">
         <Swiper
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
-          effect="coverflow"
+          initialSlide={3}
           navigation
           pagination={{ clickable: true }}
           loop="true"
           spaceBetween={20}
-          slidesPerView={2}
-          coverflowEffect={{
-            rotate: 35,
-            stretch: 80,
-            depth: 200,
-            modifier: 1,
-            slideShadows: false,
+          breakpoints= {{
+              600:{
+              slidesPerView: 1,
+              spaceBetween: 0,
+              },
+              800: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              1025:{
+                slidesPerView: 2,
+                spaceBetween: 50,
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 100,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: false,
+                  }
+              },
+              1280:{
+                slidesPerView: 2,
+                spaceBetween: 30,
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 100,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: false,
+                  }
+              },
+              1920: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 100,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: false,
+                  }
+              }
           }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
