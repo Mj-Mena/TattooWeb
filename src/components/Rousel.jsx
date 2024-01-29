@@ -19,7 +19,7 @@ const Rousel = () => {
 
   return (
     <>
-      <div className="swiper-container">
+      <div id="ra" className="swiper-container">
         <h1 id="da" style={{ textAlign: "center" }}>
           Discover Artist
         </h1>
@@ -30,61 +30,45 @@ const Rousel = () => {
           pagination={{ clickable: true }}
           loop="true"
           spaceBetween={20}
-          breakpoints= {{
-              600:{
+          breakpoints={{
+            600: {
               slidesPerView: 1,
               spaceBetween: 0,
-              },
-              800: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              1025:{
-                slidesPerView: 2,
-                spaceBetween: 50,
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 100,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,
-                  }
-              },
-              1280:{
-                slidesPerView: 2,
-                spaceBetween: 30,
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 100,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,
-                  }
-              },
-              1920: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 100,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,
-                  }
-              }
+            },
+            800: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1920: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
           }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
           <div className="swiper" id="swiper-1">
             <div className="swiper-wrapper">
-              <SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user1.id}`;
+                }}
+              >
                 <img
                   src="src\assets\1.jpg"
                   id="img1"
                   alt="img1"
                 ></img>
                 <button className="gotogal">View Profile</button>
+                <div className="swiper-lazy-preloader"></div>
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -95,7 +79,11 @@ const Rousel = () => {
                 ></img>
                 <button className="gotogal">View Profile</button>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user3.id}`;
+                }}
+              >
                 <img
                   src="src\assets\3.jpg"
                   id="img3"
@@ -103,7 +91,11 @@ const Rousel = () => {
                 ></img>
                 <button className="gotogal">View Profile</button>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user4.id}`;
+                }}
+              >
                 <img
                   src="src\assets\4.jpg"
                   id="img4"
@@ -111,7 +103,11 @@ const Rousel = () => {
                 ></img>
                 <button className="gotogal">View Profile</button>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user4.id}`;
+                }}
+              >
                 <img
                   src="src\assets\1.jpg"
                   id="img1"
