@@ -1,7 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import "./components.css";
 import { motion } from "framer-motion";
+import Modal from "./Modal";
 function Navi() {
+  const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+  const openContactModal = () => {
+    setContactModalOpen(true);
+  };
+
+  const closeContactModal = () => {
+    setContactModalOpen(false);
+  };
+
   return (
     <>
       <div className="contNavi">
@@ -31,13 +42,20 @@ function Navi() {
                   <a href="#ra">ARTIST</a>
                 </li>
                 <li>
-                  <a href="#cu">CONTACT US</a>
+                  <a href="#cu"onClick={openContactModal}>CONTACT US</a>
                 </li>
               </ul>
             </div>
           </section>
         </motion.nav>
       </div>
+      {isContactModalOpen && (
+        <Modal onClose={closeContactModal}>
+          {/* Add your Contact Us form or content here */}
+          <h2>09614316527</h2>
+          <p>jerome@gmail.com</p>
+        </Modal>
+      )}
     </>
   );
 }

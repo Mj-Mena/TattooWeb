@@ -63,7 +63,7 @@ function Minimal() {
           <p className="peven">
             Minimalistic tattoos feature simple, clean designs with a focus on
             essential elements, using limited detail, often in black ink.
-            Popular for their timeless
+            Popular for the motto "Less is More"
           </p>
           <h5 className="rm">READ MORE</h5>
         </motion.section>
@@ -91,7 +91,7 @@ function Minimal() {
           <p className="peven">
             Tribal tattoos, rooted in indigenous cultures, are bold black
             designs symbolizing heritage or status. Merging tradition with
-            contemporary styles, they serve as powerful expressions of identity.
+            contemporary styles, they serve as powerful expressions of identity and culture.
           </p>
           <h5 className="rm">READ MORE</h5>
         </motion.section>
