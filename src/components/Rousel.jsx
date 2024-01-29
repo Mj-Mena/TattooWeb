@@ -62,33 +62,35 @@ const Rousel = () => {
                   window.location = `/gallery/${user1.id}`;
                 }}
               >
-                <img src="src\assets\1.jpg" id="img1" alt="img1"></img>
-
-                <div className="swiper-lazy-preloader"></div>
+                <img src="../../src/assets/1.jpg" id="img1" alt="img1"></img>
               </SwiperSlide>
-              <SwiperSlide>
-                <img src="src\assets\2.jpg" id="img2" alt="img2"></img>
+              <SwiperSlide
+                onClick={() => {
+                    window.location = `/gallery/${user2.id}`;
+                  }}
+                >
+                <img src="../../src/assets/2.jpg" id="img2" alt="img2"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
                   window.location = `/gallery/${user3.id}`;
                 }}
               >
-                <img src="src\assets\3.jpg" id="img3" alt="img3"></img>
+                <img src="../../src/assets/3.jpg" id="img3" alt="img3"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
                   window.location = `/gallery/${user4.id}`;
                 }}
               >
-                <img src="src\assets\4.jpg" id="img4" alt="img4"></img>
+                <img src="../../src/assets/4.jpg" id="img4" alt="img4"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
-                  window.location = `/gallery/${user4.id}`;
+                  window.location = `/gallery/${user1.id}`;
                 }}
               >
-                <img src="src\assets\1.jpg" id="img1" alt="img1"></img>
+                <img src="../../src/assets/1.jpg" id="img1" alt="img1"></img>
               </SwiperSlide>
             </div>
           </div>
