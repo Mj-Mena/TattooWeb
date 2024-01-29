@@ -317,7 +317,6 @@ h5:hover {
 }
 
 /* quote */
-<<<<<<< Updated upstream
 .quoteCont .swiper {
   width: 100%;
   height: 42vh;
@@ -326,9 +325,6 @@ h5:hover {
 .swiper-button-prev {
   color: #cfb20f;
 }
-=======
-
->>>>>>> Stashed changes
 .quote {
   font-family: "Oswald", sans-serif;
   align-items: center;
@@ -524,21 +520,12 @@ h5:hover {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .bg {
     margin-top: -8%;
-<<<<<<< Updated upstream
     height: 70vh;
-=======
-    height: 80vh;
->>>>>>> Stashed changes
   }
 
   .mNavi {
     display: flex;
-<<<<<<< Updated upstream
     gap: 15rem;
-=======
-    justify-content: space-between;
-    margin-right: 3%;
->>>>>>> Stashed changes
   }
 
   .title {
@@ -546,21 +533,12 @@ h5:hover {
   }
 
   .Nright > div > ul > li > a {
-<<<<<<< Updated upstream
     font-size: 0.9rem;
-=======
-    font-size: 0.6rem;
->>>>>>> Stashed changes
   }
 
   .drop {
-<<<<<<< Updated upstream
     margin-top: 15%;
     margin-left: 62%;
-=======
-    margin-left: 60%;
-    margin-top: 10%;
->>>>>>> Stashed changes
   }
 
   .drop > h1 {
@@ -569,7 +547,6 @@ h5:hover {
   }
 
   .drop > p {
-<<<<<<< Updated upstream
     margin-top: 5%;
     padding: 0% 10%;
     font-size: 0.8rem;
@@ -617,28 +594,6 @@ h5:hover {
   .intCont {
     height: 55vh;
   }
-=======
-    margin-top: 2%;
-    padding: 0% 10%;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-  }
-
-  .btn {
-    margin-top: 4%;
-    font-size: 0.6rem;
-  }
-  .cent {
-    font-size: 2.3rem;
-  }
-  .quoteCont {
-    margin-top: 20%;
-  }
-  .intCont {
-    height: 65vh;
-  }
-
->>>>>>> Stashed changes
   .minCont {
     height: 70vh;
   }
@@ -661,23 +616,13 @@ h5:hover {
   }
 
   .rm {
-<<<<<<< Updated upstream
     font-family: "Oswald", sans-serif;
     font-size: 1.0rem;
-=======
-    font-size: 0.8rem;
-    font-family: Oswald, sans-serif;
-  }
-
-  .swiper-container {
-    margin-top: 10%;
->>>>>>> Stashed changes
   }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .bg {
-<<<<<<< Updated upstream
     margin-top: -6%;
     height: 70vh;
   }
@@ -704,25 +649,6 @@ h5:hover {
     padding: 0% 10%;
     font-size: 1.0rem;
     line-height: 1.6rem;
-=======
-    margin-top: -8%;
-    height: 80vh;
-  }
-  .mNavi {
-    display: flex;
-    gap: 30rem;
-  }
-  .title {
-    margin-top: -2%;
-    font-size: 1rem;
-  }
-  .Nright > div > ul > li > a {
-    font-size: 0.7rem;
-  }
-  .drop {
-    margin-left: 60%;
-    margin-top: 10%;
->>>>>>> Stashed changes
   }
   .drop > h1 {
     margin-bottom: 0%;
@@ -922,12 +848,6 @@ h5:hover {
     font-family: "Oswald", sans-serif;
     font-size: 1.1rem;
   }
-<<<<<<< Updated upstream
-=======
-  .swiper-container {
-    margin-top: 10%;
-  }
->>>>>>> Stashed changes
 }
 
 @media (min-width: 1920px) {
@@ -938,25 +858,25 @@ h5:hover {
   }
   .mNavi {
     display: flex;
-    gap: 65rem;
+    gap: 70rem;
   }
   .title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .Nright > div > ul > li > a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .drop {
     margin-left: 63%;
   }
   .drop > h1 {
     margin-bottom: 0%;
-    font-size: 4.5rem;
+    font-size: 3.6rem;
   }
   .drop > p {
     margin-top: 2%;
-    padding: 0% 5%;
-    font-size: 1.8rem;
+    padding: 0% 15%;
+    font-size: 1.4rem;
     line-height: 2.5rem;
   }
   .drop .btn {
@@ -968,7 +888,7 @@ h5:hover {
     margin-top: 0%;
   }
   .swiper-container .swiper .swiper-slide {
-    margin-left: 2.5%;
+    margin-left: 1.55%;
   }  
   .swiper-slide img {
     width: 30rem;
@@ -980,8 +900,11 @@ h5:hover {
     height: 65vh;
   }
   .quoteCont .swiper .swiper-slide {
-    margin-left: -0.3%;
+    margin-left: 0%;
   }  
+  .quoteCont .swiper .swiper-pagination{
+    margin-left: -0.35%;
+  }
 
   /*Hello World section later */
   .intCont {
@@ -1003,12 +926,12 @@ h5:hover {
   .peven {
     margin: 1%;
     padding: 0% 15%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.3rem;
   }
   .rm {
     font-size: "Oswald", san-serif;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
 }

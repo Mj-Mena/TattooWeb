@@ -21,7 +21,7 @@ const Rousel = () => {
     <>
       <div className="swiper-container">
         <h1 id="da" style={{ textAlign: "center" }}>
-          Dicsover Artist
+          Discover Artist
         </h1>
         <Swiper
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
