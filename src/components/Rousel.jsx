@@ -20,6 +20,9 @@ const Rousel = () => {
   return (
     <>
       <div className="swiper-container">
+        <h1 id="da" style={{ textAlign: "center" }}>
+          Dicsover Artist
+        </h1>
         <Swiper
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
           initialSlide={3}
@@ -83,9 +86,13 @@ const Rousel = () => {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
-                <button>Hi</button>
+                <button className="gotogal">View Profile</button>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = "wew";
+                }}
+              >
                 <img
                   src="src\assets\2.jpg"
                   id="img2"
@@ -93,6 +100,7 @@ const Rousel = () => {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
+                <button className="gotogal">View Profile</button>
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -102,6 +110,7 @@ const Rousel = () => {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
+                <button className="gotogal">View Profile</button>
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -111,6 +120,7 @@ const Rousel = () => {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
+                <button className="gotogal">View Profile</button>
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -120,6 +130,7 @@ const Rousel = () => {
                   loading="lazy"
                 ></img>
                 <div className="swiper-lazy-preloader"></div>
+                <button className="gotogal">View Profile</button>
               </SwiperSlide>
             </div>
           </div>
