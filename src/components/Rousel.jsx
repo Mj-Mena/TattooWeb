@@ -62,58 +62,33 @@ const Rousel = () => {
                   window.location = `/gallery/${user1.id}`;
                 }}
               >
-                <img
-                  src="src\assets\1.jpg"
-                  id="img1"
-                  alt="img1"
-                ></img>
-                <button className="gotogal">View Profile</button>
+                <img src="src\assets\1.jpg" id="img1" alt="img1"></img>
+
                 <div className="swiper-lazy-preloader"></div>
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="src\assets\2.jpg"
-                  id="img2"
-                  alt="img2"
-                  
-                ></img>
-                <button className="gotogal">View Profile</button>
+                <img src="src\assets\2.jpg" id="img2" alt="img2"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
                   window.location = `/gallery/${user3.id}`;
                 }}
               >
-                <img
-                  src="src\assets\3.jpg"
-                  id="img3"
-                  alt="img3"
-                ></img>
-                <button className="gotogal">View Profile</button>
+                <img src="src\assets\3.jpg" id="img3" alt="img3"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
                   window.location = `/gallery/${user4.id}`;
                 }}
               >
-                <img
-                  src="src\assets\4.jpg"
-                  id="img4"
-                  alt="img4"
-                ></img>
-                <button className="gotogal">View Profile</button>
+                <img src="src\assets\4.jpg" id="img4" alt="img4"></img>
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
                   window.location = `/gallery/${user4.id}`;
                 }}
               >
-                <img
-                  src="src\assets\1.jpg"
-                  id="img1"
-                  alt="img1"
-                ></img>
-                <button className="gotogal">View Profile</button>
+                <img src="src\assets\1.jpg" id="img1" alt="img1"></img>
               </SwiperSlide>
             </div>
           </div>
