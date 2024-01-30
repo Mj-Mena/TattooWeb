@@ -29,8 +29,8 @@ function Intro() {
   };
   return (
     <>
-      <div ref={sec1} className="intCont">
-        <motion.section animate={animation} id="abt" className="intro">
+      <div id="abt" ref={sec1} className="intCont">
+        <motion.section animate={animation} className="intro">
           <h1>Hello World</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quasi
           dolorem soluta praesentium laborum doloremque accusantium odit?
