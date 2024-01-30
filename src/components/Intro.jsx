@@ -31,17 +31,20 @@ function Intro() {
     <>
       <div id="abt" ref={sec1} className="intCont">
         <motion.section animate={animation} className="intro">
-          <h1>Hello World</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quasi
-          dolorem soluta praesentium laborum doloremque accusantium odit?
-          Possimus, eaque consequatur.
+          <h1>About Us</h1>
+          We're a bunch of rowdy people trying to find inspirations for our
+          future tattoos. We were fascinated with the idea of gathering artists
+          from all over the world that we liked and showcasing them to people.
+          We wanted to capture different styles, experessions, and techniques
+          and compile them into an easy to view website, thus Ink Impressions
+          was born.
         </motion.section>
         <motion.button
           animate={animation}
           onClick={handlerm}
           className="intbtn"
         >
-          READ MORE
+          BROWSE TATTOOS
         </motion.button>
       </div>
       <Rousel></Rousel>

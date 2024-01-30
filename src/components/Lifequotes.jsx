@@ -56,6 +56,36 @@ function Lifequotes() {
                   </p>
                 </div>
               </SwiperSlide>
+              <SwiperSlide>
+                <div className="quote">
+                  <p>
+                    <center className="cent">
+                      {" "}
+                      ` MY BODY IS MY JOURNAL, AND MY TATTOOS ARE MY STORY `<p className="author">Johnny Depp</p>
+                    </center>
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="quote">
+                  <p>
+                    <center className="cent">
+                      {" "}
+                      ` I WANT MY TATTOOS TO BE A STORY OF MY LIFE `<p className="author">Anne Marie</p>
+                    </center>
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="quote">
+                  <p>
+                    <center className="cent">
+                      {" "}
+                      ` SOME OF MY TATTOOS ARE A BIT SILLY, BUT I KNOW WHERE AND WHAT TIME I GOT THEM `<p className="author">Ed Sheeran</p>
+                    </center>
+                  </p>
+                </div>
+              </SwiperSlide>
             </div>
           </div>
         </Swiper>

@@ -12,17 +12,17 @@ import {
 } from "swiper/modules";
 
 const Rousel = () => {
-  const user1 = { id: "Just Galang", name: "Just Galang" };
-  const user2 = { id: "Mikki Malonzo", name: "Mikki Malonzo" };
-  const user3 = { id: "user3", name: "User 3" };
-  const user4 = { id: "user4", name: "User 4" };
+  const user1 = { id:"Just Galang", name: "Just Galang" };
+  const user2 = { id:"Mikki Malonzo", name: "Mikki Malonzo" };
+  const user3 = { id:"Aldrin Ace Jimenez", name: "Aldrin Ace Jimenez" };
+  const user4 = { id:"Tom Roder", name: "Tom Roder" };
+  const user5 = { id:"Jiemin Lin", name: "Jiemin Lin" };
+  const user6 = { id:"Pan", name: "Pan" };
+  const user7 = { id:"Tom Lumina", name: "Tom Lumina"}
 
   return (
     <>
       <div id="ra" className="swiper-container">
-        <h1 id="da" style={{ textAlign: "center" }}>
-          Discover Artist
-        </h1>
         <Swiper
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
           initialSlide={3}
@@ -87,10 +87,24 @@ const Rousel = () => {
               </SwiperSlide>
               <SwiperSlide
                 onClick={() => {
-                  window.location = `/gallery/${user1.id}`;
+                  window.location = `/gallery/${user5.id}`;
                 }}
               >
               <div className="slide-5"></div>
+              </SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user6.id}`;
+                }}
+              >
+              <div className="slide-6"></div>
+              </SwiperSlide>
+              <SwiperSlide
+                onClick={() => {
+                  window.location = `/gallery/${user7.id}`;
+                }}
+              >
+              <div className="slide-7"></div>
               </SwiperSlide>
             </div>
           </div>
