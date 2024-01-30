@@ -21,6 +21,17 @@ body {
   gap: 5rem;
   padding-left: 30px;
 }
+.headGroup {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+}
+.pg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
 ul {
   display: flex;
   gap: 2rem;
@@ -230,8 +241,16 @@ h5:hover {
   position: relative;
   overflow: hidden;
 }
+.galcont {
+  padding-top: 3%;
+  width: 100vw;
+  height: 100%;
+  margin-top: -3%;
+  background-color: #e4e4e4;
+}
+
 /* Test */
-.slide-1{
+.slide-1 {
   background-image: url("../assets/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,7 +274,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-1{
+.slide-1 {
   background-image: url("../assets/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,7 +298,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-2{
+.slide-2 {
   background-image: url("../assets/2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,7 +322,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-3{
+.slide-3 {
   background-image: url("../assets/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,7 +346,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-4{
+.slide-4 {
   background-image: url("../assets/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,8 +370,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-
-.slide-5{
+.slide-5 {
   background-image: url("../assets/5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -366,8 +384,8 @@ h5:hover {
   box-shadow: 2px 2px 5px rgb(128, 127, 127);
   margin-left: 5rem;
   margin-right: 5rem;
-  width: 20rem;
-  height: 70%;
+  width: 30rem;
+  height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
   filter: brightness(1);
@@ -376,7 +394,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-6{
+.slide-6 {
   background-image: url("../assets/6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -390,8 +408,8 @@ h5:hover {
   box-shadow: 2px 2px 5px rgb(128, 127, 127);
   margin-left: 5rem;
   margin-right: 5rem;
-  width: 20rem;
-  height: 70%;
+  width: 30rem;
+  height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
   filter: brightness(1);
@@ -400,7 +418,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.slide-7{
+.slide-7 {
   background-image: url("../assets/7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,8 +432,8 @@ h5:hover {
   box-shadow: 2px 2px 5px rgb(128, 127, 127);
   margin-left: 5rem;
   margin-right: 5rem;
-  width: 20rem;
-  height: 70%;
+  width: 30rem;
+  height: 80%;
   object-fit: cover;
   background-color: rgb(254, 254, 254);
   filter: brightness(1);
@@ -424,7 +442,7 @@ h5:hover {
   transition: all ease-in-out 0.3s;
 }
 
-.swiper-slide:hover div {
+.swiper-slide .hoverr:hover {
   box-shadow: 2px 2px 5px rgb(62, 62, 62);
   filter: brightness(0.5);
   transform: scale(1.1);
@@ -442,14 +460,6 @@ h5:hover {
   z-index: 1111;
 }
 
-.swiper-slide:hover > .overlay {
-  transition: all ease-in-out 1s;
-  display: block;
-  transform: translate(30%);
-}
-.swiper-slide:hover > img {
-  display: block;
-}
 .swiper .swiper-pagination {
   padding-top: 10rem;
 }
@@ -555,19 +565,25 @@ h5:hover {
   /*border-style is temporary so that you can see it's the profile image */
 }
 .profile-gallery {
+  background-color: white;
+  border-radius: 30px;
   display: grid;
+  margin-top: 10%;
   margin: 3%;
   box-shadow: 1px 1px 3px gray;
   grid-template-columns: 1fr 1fr;
 }
 .image-gallery {
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 3px gray;
   display: grid;
   margin: 2%;
-  padding: 10%;
+  padding: 8%;
+  margin-right: 3.5%;
+  margin-left: 3.5%;
   gap: 2.5rem;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top: solid #C59D5F;
-
 }
 .deets {
   margin-left: -20%;
@@ -1262,7 +1278,7 @@ h5:hover {
   }
   /*Swiper Slide*/
   .swiper-container {
-    margin-top: 0%;
+    margin-top: 5%;
   }
   .swiper-container .swiper .swiper-slide {
     margin-left: 1.55%;
@@ -1273,7 +1289,7 @@ h5:hover {
   }
   /*Life Quotes*/
   .quoteCont {
-    margin-top: 1%;
+    margin-top: 4%;
     height: 65vh;
   }
   .quoteCont .swiper .swiper-slide {
@@ -1284,13 +1300,13 @@ h5:hover {
   }
   .cent {
     margin-top: 1%;
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .author {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .intro {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .intro h1 {
     margin-top: -10%;
@@ -1301,7 +1317,7 @@ h5:hover {
   }
   /*Hello World section later */
   .intCont {
-    height: 85vh;
+    height: 95vh;
   }
   .minCont {
     height: 100vh;

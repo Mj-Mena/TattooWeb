@@ -12,17 +12,17 @@ import {
 } from "swiper/modules";
 
 const Rousel = () => {
-  const user1 = { id:"Just Galang", name: "Just Galang" };
-  const user2 = { id:"Mikki Malonzo", name: "Mikki Malonzo" };
-  const user3 = { id:"Aldrin Ace Jimenez", name: "Aldrin Ace Jimenez" };
-  const user4 = { id:"Tom Roder", name: "Tom Roder" };
-  const user5 = { id:"Jiemin Lin", name: "Jiemin Lin" };
-  const user6 = { id:"Pan", name: "Pan" };
-  const user7 = { id:"Tom Lumina", name: "Tom Lumina"}
+  const user1 = { id: "Just Galang", name: "Just Galang" };
+  const user2 = { id: "Mikki Malonzo", name: "Mikki Malonzo" };
+  const user3 = { id: "Aldrin Ace Jimenez", name: "Aldrin Ace Jimenez" };
+  const user4 = { id: "Tom Roder", name: "Tom Roder" };
+  const user5 = { id: "Jiemin Lin", name: "Jiemin Lin" };
+  const user6 = { id: "Pan", name: "Pan" };
+  const user7 = { id: "Tom Lumina", name: "Tom Lumina" };
 
   return (
     <>
-      <div id="ra" className="swiper-container">
+      <div id="min" className="swiper-container">
         <Swiper
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
           initialSlide={3}
@@ -55,56 +55,63 @@ const Rousel = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <div className="swiper" id="swiper-1">
+          <div className="swiper hover" id="swiper-1">
             <div className="swiper-wrapper">
-              <SwiperSlide 
-                onClick={() => {
-                  window.location = `/gallery/${user1.id}`;
-                }}
-              >
-                <div className="slide-1"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-1 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user1.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
+              <SwiperSlide>
+                <div
+                  className="slide-2 hoverr"
+                  onClick={() => {
                     window.location = `/gallery/${user2.id}`;
                   }}
-                >
-                <div className="slide-2"></div>
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
-                  window.location = `/gallery/${user3.id}`;
-                }}
-              >
-                <div className="slide-3"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-3 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user3.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
-                  window.location = `/gallery/${user4.id}`;
-                }}
-              >
-                <div className="slide-4"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-4 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user4.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
-                  window.location = `/gallery/${user5.id}`;
-                }}
-              >
-              <div className="slide-5"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-5 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user5.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
-                  window.location = `/gallery/${user6.id}`;
-                }}
-              >
-              <div className="slide-6"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-6 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user6.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
-              <SwiperSlide
-                onClick={() => {
-                  window.location = `/gallery/${user7.id}`;
-                }}
-              >
-              <div className="slide-7"></div>
+              <SwiperSlide>
+                <div
+                  className="slide-7 hoverr"
+                  onClick={() => {
+                    window.location = `/gallery/${user7.id}`;
+                  }}
+                ></div>
               </SwiperSlide>
             </div>
           </div>

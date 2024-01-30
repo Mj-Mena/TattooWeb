@@ -51,7 +51,6 @@ function Minimal() {
     <>
       <div className="minCont">
         <motion.section
-          id="min"
           ref={sec1}
           animate={animation}
           className="min1"
@@ -65,7 +64,6 @@ function Minimal() {
             essential elements, using limited detail, often in black ink.
             Popular for the motto "Less is More"
           </p>
-          <h5 className="rm">READ MORE</h5>
         </motion.section>
         <motion.section animate={animation} className="min2"></motion.section>
         <motion.section ref={sec2} animate={animation2} className="even1">
@@ -77,7 +75,6 @@ function Minimal() {
             creativity with shapes and lines. They offer a unique and
             imaginative form of personal expression.
           </p>
-          <h5 className="rm">READ MORE</h5>
         </motion.section>
         <motion.section
           ref={sec2}
@@ -91,9 +88,9 @@ function Minimal() {
           <p className="peven">
             Tribal tattoos, rooted in indigenous cultures, are bold black
             designs symbolizing heritage or status. Merging tradition with
-            contemporary styles, they serve as powerful expressions of identity and culture.
+            contemporary styles, they serve as powerful expressions of identity
+            and culture.
           </p>
-          <h5 className="rm">READ MORE</h5>
         </motion.section>
       </div>
       <Intro></Intro>

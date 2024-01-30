@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./components.css";
 import { motion } from "framer-motion";
 import Modal from "./Modal";
@@ -39,10 +39,12 @@ function Navi() {
                   <a href="#min">TATTOO</a>
                 </li>
                 <li>
-                  <a href="#ra">ARTIST</a>
+                  <a href="#min">ARTIST</a>
                 </li>
                 <li>
-                  <a href="#cu"onClick={openContactModal}>CONTACT US</a>
+                  <a href="#cu" onClick={openContactModal}>
+                    CONTACT US
+                  </a>
                 </li>
               </ul>
             </div>
@@ -52,8 +54,14 @@ function Navi() {
       {isContactModalOpen && (
         <Modal onClose={closeContactModal}>
           {/* Add your Contact Us form or content here */}
-          <h2>09614316527</h2>
-          <p>jerome@gmail.com</p>
+          <h1 className="headGroup"> Members</h1>
+          <p className="pg">
+            {" "}
+            <section>Gimena</section>
+            <section>Zaragoza</section>
+            <section>Santos</section>
+            <section>Salisi</section>
+          </p>
         </Modal>
       )}
     </>

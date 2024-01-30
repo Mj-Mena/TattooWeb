@@ -3,13 +3,55 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const UserProfile = () => {
-  const user1 = {location:"Sydney, Australia", studio:"SYDNEY TATTOO ARTISTS", email:"galang@gmail.com", phone:"6395411253", sms:"@juicytatties"};
-  const user2 = {location:"Rizal, Philippines", studio:"Studio Mikki", email:"mikki.malonzo@gmail.com", phone:"099514840721", sms:"@mikki.malonzo"};
-  const user3 = {location:"Quezon City, Philippines", studio:"Blvck tattoo studio", email:"aldrin.jimenez@gmail.com", phone:"09613149553", sms:"@aldrin_ace_tattoo"};
-  const user4 = {location:"Sydney, Australia", studio:"SYDNEY TATTOO ARTISTS", email:"trenched_tom@gmail.com", phone:"6344186739", sms:"@trenched"};
-  const user5 = {location:"Toronto, Canada", studio:"Private Studio", email:"jiemin.lin@gmail.com", phone:"09149855158", sms:"@jieminart"};
-  const user6 = {location:"Portland, Oregon", studio:"Private Studio", email:"pantattoo@gmail.com", phone:"44982516638", sms:"@deadpan.tattoo"};
-  const user7 = {location:"Bali, Indonesia", studio:"Lumina Tattoo Studio Bali", email:"lumina.tom@gmail.com", phone:"+62816580918", sms:"tom_lumina_tattoo"};
+  const user1 = {
+    location: "Sydney, Australia",
+    studio: "SYDNEY TATTOO ARTISTS",
+    email: "galang@gmail.com",
+    phone: "6395411253",
+    sms: "@juicytatties",
+  };
+  const user2 = {
+    location: "Rizal, Philippines",
+    studio: "Studio Mikki",
+    email: "mikki.malonzo@gmail.com",
+    phone: "099514840721",
+    sms: "@mikki.malonzo",
+  };
+  const user3 = {
+    location: "Quezon City, Philippines",
+    studio: "Blvck tattoo studio",
+    email: "aldrin.jimenez@gmail.com",
+    phone: "09613149553",
+    sms: "@aldrin_ace_tattoo",
+  };
+  const user4 = {
+    location: "Sydney, Australia",
+    studio: "SYDNEY TATTOO ARTISTS",
+    email: "trenched_tom@gmail.com",
+    phone: "6344186739",
+    sms: "@trenched",
+  };
+  const user5 = {
+    location: "Toronto, Canada",
+    studio: "Private Studio",
+    email: "jiemin.lin@gmail.com",
+    phone: "09149855158",
+    sms: "@jieminart",
+  };
+  const user6 = {
+    location: "Portland, Oregon",
+    studio: "Private Studio",
+    email: "pantattoo@gmail.com",
+    phone: "44982516638",
+    sms: "@deadpan.tattoo",
+  };
+  const user7 = {
+    location: "Bali, Indonesia",
+    studio: "Lumina Tattoo Studio Bali",
+    email: "lumina.tom@gmail.com",
+    phone: "+62816580918",
+    sms: "tom_lumina_tattoo",
+  };
 
   const [images, setImages] = useState([]);
   const [isActive, setIsActive] = useState(false);
@@ -21,7 +63,6 @@ const UserProfile = () => {
   const handlefull = () => {
     setIsActive((current) => !current);
   };
-  
 
   useEffect(() => {
     const fetchUserImages = async () => {
@@ -37,34 +78,32 @@ const UserProfile = () => {
     fetchUserImages();
   }, [userID]);
 
-
   const userSwitch = (user) => {
-    console.log("URL PASSSED IS", user)
-    switch(user) {
-      case 'Just Galang':
-        return user1
-      case 'Mikki Malonzo':
-        return user2
-      case 'Aldrin Ace Jimenez':
-        return user3
-      case 'Tom Roder':
-        return user4
-      case 'Jiemin Lin':
-        return user5
-      case 'Pan':
-        return user6
-      case 'Tom Lumina':
-        return user7
+    console.log("URL PASSSED IS", user);
+    switch (user) {
+      case "Just Galang":
+        return user1;
+      case "Mikki Malonzo":
+        return user2;
+      case "Aldrin Ace Jimenez":
+        return user3;
+      case "Tom Roder":
+        return user4;
+      case "Jiemin Lin":
+        return user5;
+      case "Pan":
+        return user6;
+      case "Tom Lumina":
+        return user7;
       default:
         return console.log("Error");
     }
-  } 
+  };
   const currentUser = userSwitch(userID);
-  console.log("CURRENT USER VALUE", currentUser)
+  console.log("CURRENT USER VALUE", currentUser);
 
   return (
-    <div>
-
+    <div className="galcont">
       <div className="profile-gallery">
         <img
           src={`profileImage/${userID}.jpg`}
